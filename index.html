@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasith Mavinda | MIT Undergraduate & Aspiring OSCM Professional</title>
+    <meta name="description"
+        content="Portfolio of Yasith Mavinda, a BSc (Hons) Management and Information Technology (MIT) undergraduate at University of Kelaniya, focused on Operations and Supply Chain Management (OSCM) and Tech.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png?v=2">
+
+    <!-- Google Fonts: Poppins (headings) and Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR (White background, light thin border) -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon"><img src="images/profile.png" alt="Yasith Mavinda Profile"></div>
+                <div class="logo-text-group">
+                    <span class="logo-title">YASITH MAVINDA</span>
+                    <span class="logo-subtitle">MIT UNDERGRADUATE</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions and Mobile toggle -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="theme-icon-sun"></i>
+                    <i data-lucide="moon" class="theme-icon-moon"></i>
+                </button>
+                <button type="button" class="btn btn-blue-pill talk-btn request-cv-btn" onclick="openRequestCvModal(event)" aria-label="Request CV">
+                    Request CV
+                    <i data-lucide="mail"></i>
+                </button>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation">
+                    <i data-lucide="menu" id="hamburger-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#education" class="mobile-nav-link">Education</a></li>
+                <li><a href="#certificates" class="mobile-nav-link">Certificates</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li class="mobile-nav-actions">
+                    <button type="button" class="btn btn-blue-pill w-full request-cv-btn" onclick="openRequestCvModal(event)" aria-label="Request CV">
+                        Request CV
+                        <i data-lucide="mail"></i>
+                    </button>
+                    <button class="theme-toggle-btn" id="mobile-theme-toggle-btn" aria-label="Toggle Theme">
+                        <i data-lucide="sun" class="theme-icon-sun"></i>
+                        <i data-lucide="moon" class="theme-icon-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. HERO SECTION (Illuminated Glow Hero) -->
+        <section class="hero-section illuminated-hero-section" id="home">
+            <!-- Background Glow Elements -->
+            <div class="illuminated-bg">
+                <div class="shadow-bgt"></div>
+                <div class="shadow-bgb"></div>
+            </div>
+
+            <!-- SVG Filter Definition for Electric Blue Glow -->
+            <svg class="svg-glow-filter" width="0" height="0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="glow-4" color-interpolation-filters="sRGB" x="-50%" y="-200%" width="200%"
+                        height="500%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur4" />
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="19" result="blur19" />
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur9" />
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur30" />
+                        <feColorMatrix in="blur4" result="color-0-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.52 0 0 0  0 0 1 0 0  0 0 0 0.9 0" />
+                        <feOffset in="color-0-blur" result="layer-0-offsetted" dx="0" dy="0" />
+                        <feColorMatrix in="blur19" result="color-1-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.38 0 0 0  0 0 1 0 0  0 0 0 0.95 0" />
+                        <feOffset in="color-1-blur" result="layer-1-offsetted" dx="0" dy="2" />
+                        <feColorMatrix in="blur9" result="color-2-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.5 0 0 0  0 0 1 0 0  0 0 0 0.8 0" />
+                        <feOffset in="color-2-blur" result="layer-2-offsetted" dx="0" dy="2" />
+                        <feColorMatrix in="blur30" result="color-3-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.32 0 0 0  0 0 0.95 0 0  0 0 0 1 0" />
+                        <feOffset in="color-3-blur" result="layer-3-offsetted" dx="0" dy="2" />
+                        <feColorMatrix in="blur30" result="color-4-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.25 0 0 0  0 0 0.9 0 0  0 0 0 0.85 0" />
+                        <feOffset in="color-4-blur" result="layer-4-offsetted" dx="0" dy="16" />
+                        <feColorMatrix in="blur30" result="color-5-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.2 0 0 0  0 0 0.8 0 0  0 0 0 0.7 0" />
+                        <feOffset in="color-5-blur" result="layer-5-offsetted" dx="0" dy="64" />
+                        <feColorMatrix in="blur30" result="color-6-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.15 0 0 0  0 0 0.7 0 0  0 0 0 0.6 0" />
+                        <feOffset in="color-6-blur" result="layer-6-offsetted" dx="0" dy="64" />
+                        <feColorMatrix in="blur30" result="color-7-blur" type="matrix"
+                            values="0 0 0 0 0  0 0.1 0 0 0  0 0 0.6 0 0  0 0 0 0.5 0" />
+                        <feOffset in="color-7-blur" result="layer-7-offsetted" dx="0" dy="64" />
+                        <feMerge>
+                            <feMergeNode in="layer-0-offsetted" />
+                            <feMergeNode in="layer-1-offsetted" />
+                            <feMergeNode in="layer-2-offsetted" />
+                            <feMergeNode in="layer-3-offsetted" />
+                            <feMergeNode in="layer-4-offsetted" />
+                            <feMergeNode in="layer-5-offsetted" />
+                            <feMergeNode in="layer-6-offsetted" />
+                            <feMergeNode in="layer-7-offsetted" />
+                            <feMergeNode in="layer-0-offsetted" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+            </svg>
+
+            <div class="container hero-container">
+                <!-- Hero Content Centered -->
+                <div class="hero-content-centered">
+                    <span class="hero-hello-label">Hello, I'm <span class="text-blue">Yasith Mavinda</span></span>
+
+                    <h1 class="hero-heading">
+                        Enthusiastic MIT
+                        <br>
+                        <span class="illuminated-text-glow" data-text="Undergraduate">Undergraduate</span>
+                    </h1>
+
+                    <p class="hero-subheading">
+                        Aspiring OSCM &amp; Tech Professional
+                    </p>
+
+                    <p class="hero-desc">
+                        I am a BSc (Hons) Management and Information Technology (MIT) undergraduate at the University of
+                        Kelaniya, passionate about applying business strategy, design, and technology to build impactful
+                        solutions. I'm currently focused on Operations and Supply Chain Management (OSCM).
+                    </p>
+
+                    <!-- Buttons Row -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-solid-blue btn-hero-primary">
+                            View My Work
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <button type="button" class="btn btn-outline-gray btn-hero-secondary request-cv-btn" onclick="openRequestCvModal(event)" aria-label="Request CV">
+                            Request CV
+                            <i data-lucide="mail"></i>
+                        </button>
+                    </div>
+
+                    <!-- Trusted Logo strip underneath -->
+                    <div class="trusted-strip">
+                        <span class="trusted-title">Academic &amp; Training Institutions</span>
+                        <div class="trusted-logos">
+                            <span class="trusted-logo-text">University of Kelaniya</span>
+                            <span class="trusted-logo-divider">•</span>
+                            <span class="trusted-logo-text">DP Education IT Campus</span>
+                            <span class="trusted-logo-divider">•</span>
+                            <span class="trusted-logo-text">Kekirawa English Academy</span>
+                            <span class="trusted-logo-divider">•</span>
+                            <span class="trusted-logo-text">D.S. Senanayake National College</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content text-center" style="max-width: 900px; margin: 0 auto;">
+                    <h2 class="section-title text-center">About Me</h2>
+                    <p class="section-desc mb-4 text-center">
+                        I'm Yasith Mavinda, a BSc (Hons) Management and Information Technology (MIT) undergraduate at
+                        the University of Kelaniya, focused on Operations and Supply Chain Management (OSCM). I enjoy
+                        combining business strategy, design, and technology to build practical, impactful solutions.
+                    </p>
+                    <p class="section-desc text-center">
+                        I've worked on projects like a Salon Booking Management System (UI design) and Taskora, a
+                        full-stack real-time task management platform where I led the database design. I'm someone who
+                        values continuous learning always looking to sharpen my skills and take on the next challenge.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.5 EDUCATION HISTORY SECTION (CURVED WAVE TIMELINE DESIGN) -->
+        <section class="education-section" id="education">
+            <div class="container">
+                <div class="section-header-row mb-16 text-center justify-center">
+                    <div class="text-center w-full">
+                        <h2 class="section-title text-center">Education History</h2>
+                    </div>
+                </div>
+
+                <div class="curved-timeline-container">
+                    <!-- SVG Curved Wave Connector Line (Desktop) -->
+                    <svg class="curved-timeline-svg" viewBox="0 0 1000 240" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M 80 150 C 220 230, 320 40, 500 60 C 680 80, 780 210, 920 120"
+                            stroke="url(#wave-gradient)" stroke-width="4" stroke-linecap="round" fill="none" />
+                        <defs>
+                            <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#2563eb" stop-opacity="0.3" />
+                                <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.3" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <!-- Wave Steps Grid -->
+                    <div class="curved-steps-grid">
+                        <!-- Step 1 -->
+                        <div class="curved-step step-pos-1">
+                            <div class="curved-text-block text-top">
+                                <span class="curved-watermark-num">4</span>
+                                <div class="step-meta-row">
+                                    <span class="education-year">2025 – Present</span>
+                                    <span class="education-status-badge badge-reading">READING</span>
+                                </div>
+                                <h3 class="curved-step-title">BSc (Hons) in Management &amp; IT</h3>
+                                <span class="curved-step-sub">Dept. of Industrial Management | University of
+                                    Kelaniya</span>
+                                <p class="curved-step-desc">Focusing on Systems Analysis, Database Management, Software
+                                    Engineering, and Operations Research.</p>
+                            </div>
+                            <div class="hex-node-box node-glow-blue">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="curved-step step-pos-2">
+                            <div class="hex-node-box node-glow-purple">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <div class="curved-text-block text-bottom">
+                                <span class="curved-watermark-num">3</span>
+                                <div class="step-meta-row">
+                                    <span class="education-year">2026</span>
+                                    <span class="education-status-badge badge-certified">CERTIFIED</span>
+                                </div>
+                                <h3 class="curved-step-title">Figma UI/UX Design</h3>
+                                <span class="curved-step-sub">DP Education IT Campus</span>
+                                <p class="curved-step-desc">Comprehensive training on UI wireframing, prototyping, and
+                                    component design systems.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="curved-step step-pos-3">
+                            <div class="curved-text-block text-top">
+                                <span class="curved-watermark-num">2</span>
+                                <div class="step-meta-row">
+                                    <span class="education-year">2024</span>
+                                    <span class="education-status-badge badge-completed">COMPLETED</span>
+                                </div>
+                                <h3 class="curved-step-title">Intermediate English</h3>
+                                <span class="curved-step-sub">Kekirawa English Academy</span>
+                                <p class="curved-step-desc">Intensive 10-week course focusing on professional
+                                    communication and public speaking.</p>
+                            </div>
+                            <div class="hex-node-box node-glow-green">
+                                <i data-lucide="languages"></i>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="curved-step step-pos-4">
+                            <div class="hex-node-box node-glow-teal">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <div class="curved-text-block text-bottom">
+                                <span class="curved-watermark-num">1</span>
+                                <div class="step-meta-row">
+                                    <span class="education-year">Secondary</span>
+                                    <span class="education-status-badge badge-completed">COMPLETED</span>
+                                </div>
+                                <h3 class="curved-step-title">G.C.E. Advanced Level</h3>
+                                <span class="curved-step-sub">D.S. Senanayake National College</span>
+                                <p class="curved-step-desc">Secondary education foundation with focus on technology and
+                                    analytical subjects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.8 CERTIFICATIONS & ONLINE COURSES SECTION (PROJECTS GRID DESIGN) -->
+        <section class="certificates-section" id="certificates">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header-row mb-16 text-center justify-center">
+                    <div class="text-center">
+                        <h2 class="section-title text-center">CERTIFICATIONS &amp; COURSES</h2>
+                    </div>
+                </div>
+
+                <!-- Certificates 3-Column Grid (Matching Featured Projects) -->
+                <div class="projects-grid">
+                    <!-- Certificate 1: Figma UI/UX (DP Education) -->
+                    <div class="project-card hover-lift open-project-btn" data-project="figma-course">
+                        <div class="project-image-box">
+                            <img src="images/figma_certificate.png"
+                                alt="DP Education IT Campus Figma Course Certificate">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">DP EDUCATION • JAN 2026</span>
+                                <h3 class="project-card-title">Figma UI/UX Design Course</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open certificate details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: Moratuwa CODL Web Design -->
+                    <div class="project-card hover-lift open-project-btn" data-project="uom-web-design">
+                        <div class="project-image-box">
+                            <img src="images/uom_web_design_certificate.png"
+                                alt="University of Moratuwa CODL Web Design for Beginners">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">UNIV OF MORATUWA • CODL</span>
+                                <h3 class="project-card-title">Web Design for Beginners</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open certificate details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: upGrad Supply Chain -->
+                    <div class="project-card hover-lift open-project-btn" data-project="upgrad-supply-chain">
+                        <div class="project-image-box">
+                            <img src="images/upgrad_supply_chain_certificate.png"
+                                alt="upGrad Introduction to Supply Chain Management">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">UPGRAD • JUNE 2026</span>
+                                <h3 class="project-card-title">Intro to Supply Chain Management</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open certificate details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4: HP LIFE AI for Business Professionals -->
+                    <div class="project-card hover-lift open-project-btn certificate-extra certificate-hidden"
+                        data-project="hp-ai-course">
+                        <div class="project-image-box">
+                            <img src="images/hp_ai_certificate.png"
+                                alt="HP LIFE AI for Business Professionals Certificate">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">HP FOUNDATION • JAN 2026</span>
+                                <h3 class="project-card-title">AI for Business Professionals</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open certificate details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5: HP LIFE Critical Thinking in AI Era -->
+                    <div class="project-card hover-lift open-project-btn certificate-extra certificate-hidden"
+                        data-project="hp-critical-thinking">
+                        <div class="project-image-box">
+                            <img src="images/hp_critical_thinking_certificate.png"
+                                alt="HP LIFE Critical Thinking in the AI Era Certificate">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">HP FOUNDATION • JAN 2026</span>
+                                <h3 class="project-card-title">Critical Thinking in the AI Era</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open certificate details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 6: HP LIFE Data Science & Analytics -->
+                    <div class="project-card hover-lift open-project-btn certificate-extra certificate-hidden"
+                        data-project="hp-data-science">
+                        <div class="project-image-box">
+                            <img src="images/hp_data_science_certificate.png"
+                                alt="HP LIFE Data Science & Analytics Certificate">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">HP FOUNDATION • JAN 2026</span>
+                                <h3 class="project-card-title">Data Science &amp; Analytics</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open certificate details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- See More Certificates Button -->
+                <div class="text-center mt-10" id="see-more-certs-container">
+                    <button id="see-more-certs-btn" class="btn btn-outline-gray see-more-btn">
+                        <span class="btn-text">See More</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.5 SKILLS & COMPETENCIES SECTION -->
+        <section class="skills-section" id="skills">
+            <div class="container text-center">
+                <div class="section-header-row mb-16 text-center justify-center">
+                    <div class="text-center w-full">
+                        <h2 class="section-title text-center">TECHNICAL &amp; PROFESSIONAL SKILLS</h2>
+                        <p class="section-subtitle text-center mb-0" style="margin-left: auto; margin-right: auto;">
+                            Categorized matrix of programming languages, databases, tools, cloud platforms,
+                            architecture, and soft skills.</p>
+                    </div>
+                </div>
+
+                <!-- Skills Matrix Grid -->
+                <div class="skills-grid">
+                    <!-- Sub-category 1: Programming Languages -->
+                    <div class="skill-category-card hover-lift text-left">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-category-title">Programming Languages</h3>
+                                <span class="skill-category-sub">Core Development</span>
+                            </div>
+                        </div>
+                        <div class="skill-pills-wrap">
+                            <span class="skill-badge-pill"><i data-lucide="terminal"></i> Java</span>
+                            <span class="skill-badge-pill"><i data-lucide="cpu"></i> C++</span>
+                            <span class="skill-badge-pill"><i data-lucide="file-code"></i> JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-category 3: Databases -->
+                    <div class="skill-category-card hover-lift text-left">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-category-title">Databases</h3>
+                                <span class="skill-category-sub">Relational &amp; ORM Data Systems</span>
+                            </div>
+                        </div>
+                        <div class="skill-pills-wrap">
+                            <span class="skill-badge-pill"><i data-lucide="database"></i> MySQL</span>
+                            <span class="skill-badge-pill"><i data-lucide="hard-drive"></i> PostgreSQL (via Supabase,
+                                Prisma ORM)</span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-category 4: Tools -->
+                    <div class="skill-category-card hover-lift text-left">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-category-title">Tools</h3>
+                                <span class="skill-category-sub">IDEs, Version Control &amp; Design</span>
+                            </div>
+                        </div>
+                        <div class="skill-pills-wrap">
+                            <span class="skill-badge-pill"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-figma"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg> Figma</span>
+                            <span class="skill-badge-pill"><i data-lucide="file-text"></i> MS Office</span>
+                            <span class="skill-badge-pill"><i data-lucide="laptop"></i> VS Code</span>
+                            <span class="skill-badge-pill"><i data-lucide="git-branch"></i> Git / GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-category 5: Cloud Platforms -->
+                    <div class="skill-category-card hover-lift text-left skill-card-extra skill-card-hidden">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i data-lucide="cloud"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-category-title">Cloud Platforms</h3>
+                                <span class="skill-category-sub">BaaS &amp; Cloud Infrastructure</span>
+                            </div>
+                        </div>
+                        <div class="skill-pills-wrap">
+                            <span class="skill-badge-pill"><i data-lucide="cloud-lightning"></i> Supabase</span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-category 6: Other Technical Competencies -->
+                    <div class="skill-category-card hover-lift text-left skill-card-extra skill-card-hidden">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-category-title">Other Technical Competencies</h3>
+                                <span class="skill-category-sub">Web, DevOps &amp; Security</span>
+                            </div>
+                        </div>
+                        <div class="skill-pills-wrap">
+                            <span class="skill-badge-pill"><i data-lucide="layout"></i> HTML &amp; CSS</span>
+                            <span class="skill-badge-pill"><i data-lucide="box"></i> Docker (containerization)</span>
+                            <span class="skill-badge-pill"><i data-lucide="workflow"></i> CI/CD with GitHub
+                                Actions</span>
+                            <span class="skill-badge-pill"><i data-lucide="server"></i> REST API design (Node.js +
+                                Express)</span>
+                            <span class="skill-badge-pill"><i data-lucide="activity"></i> Real-time systems (Socket.IO /
+                                WebSockets)</span>
+                            <span class="skill-badge-pill"><i data-lucide="lock"></i> JWT &amp; bcrypt auth
+                                (RBAC)</span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-category 7: Soft Skills & Languages -->
+                    <div
+                        class="skill-category-card hover-lift text-left span-full-desktop skill-card-extra skill-card-hidden">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div>
+                                <h3 class="skill-category-title">Soft Skills &amp; Communication</h3>
+                                <span class="skill-category-sub">Professional Attributes &amp; Languages</span>
+                            </div>
+                        </div>
+                        <div class="skill-pills-wrap">
+                            <span class="skill-badge-pill"><i data-lucide="clock"></i> Time Management &amp;
+                                Organization</span>
+                            <span class="skill-badge-pill"><i data-lucide="user-check"></i> Collaboration &amp;
+                                Teamwork</span>
+                            <span class="skill-badge-pill"><i data-lucide="brain-circuit"></i> Problem Solving &amp;
+                                Critical Thinking</span>
+                            <span class="skill-badge-pill"><i data-lucide="globe"></i> English (Professional)</span>
+                            <span class="skill-badge-pill"><i data-lucide="message-square"></i> Sinhala (Native)</span>
+                            <span class="skill-badge-pill"><i data-lucide="languages"></i> Tamil (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- See More Skills Button -->
+                <div class="text-center mt-10" id="see-more-skills-container">
+                    <button id="see-more-skills-btn" class="btn btn-outline-gray see-more-btn">
+                        <span class="btn-text">See More</span>
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED PROJECTS SECTION (3 Columns) -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header-row mb-16 text-center justify-center" style="position: relative;">
+                    <div class="text-center">
+                        <h2 class="section-title text-center">FEATURED PROJECTS</h2>
+                    </div>
+                    <a href="https://github.com/yasithmavinda" target="_blank" rel="noreferrer" class="view-all-link"
+                        style="position: absolute; right: 0;">
+                        View GitHub
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Projects 3-Column Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card hover-lift open-project-btn" data-project="salon-booking-system">
+                        <div class="project-image-box">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80"
+                                alt="Salon Booking Management System">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">Java &amp; MySQL</span>
+                                <h3 class="project-card-title">Salon Booking Management System</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card hover-lift open-project-btn" data-project="console-game-development">
+                        <div class="project-image-box">
+                            <img src="images/game_project_bw.png" alt="Console-Based Game Development">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">C++ Game</span>
+                                <h3 class="project-card-title">Console-Based Game Development</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card hover-lift open-project-btn" data-project="taskora-task-management">
+                        <div class="project-image-box">
+                            <img src="images/taskora_project_bw.png"
+                                alt="Taskora - Full-Stack Real-Time Task Management System">
+                        </div>
+                        <div class="project-text-row">
+                            <div class="project-info-left text-left">
+                                <span class="project-tag">Full-Stack &amp; Socket.IO</span>
+                                <h3 class="project-card-title">Taskora — Task Management</h3>
+                            </div>
+                            <button class="project-circle-arrow-btn" aria-label="Open details">
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 8. GET IN TOUCH SECTION (Form grid layout) -->
+        <section class="contact-section" id="contact">
+            <!-- Dot grid decoration -->
+            <div class="contact-dot-pattern"></div>
+
+            <div class="container grid-two-cols" style="position: relative; z-index: 5;">
+                <!-- Left Details -->
+                <div class="contact-details text-left">
+                    <h2 class="contact-main-heading">Let's Create Something <br>Amazing Together</h2>
+                    <p class="contact-desc">
+                        Have an academic project, research collaboration, or software development opportunity? Feel free
+                        to reach out.
+                    </p>
+
+                    <!-- Contact coordinates -->
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <span class="info-label">Email Me</span>
+                                <a href="mailto:yasithmavinda@gmail.com" class="info-value">yasithmavinda@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <span class="info-label">Call / WhatsApp</span>
+                                <a href="https://wa.me/94769055019" target="_blank" rel="noreferrer" class="info-value">076 905 5019</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Ampara, Sri Lanka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons row -->
+                    <div class="contact-social-row">
+                        <a href="https://www.linkedin.com/in/yasith-mavinda-484a08352/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1y82rL96R2KiBOh8vO5f0w%3D%3D"
+                            target="_blank" rel="noreferrer" class="social-btn hover-lift" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/yasithmavinda" target="_blank" rel="noreferrer"
+                            class="social-btn hover-lift" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class="contact-form-box hover-lift">
+                    <div id="contact-success-msg" class="contact-success-card hidden">
+                        <div class="success-icon-badge">
+                            <i data-lucide="check-circle-2"></i>
+                        </div>
+                        <h4 class="success-title">Message Sent Successfully!</h4>
+                        <p class="success-desc">Thank you for reaching out! Your message has been received and I will
+                            respond to you shortly.</p>
+                        <button type="button" id="send-another-btn" class="btn btn-solid-blue btn-sm success-reset-btn">
+                            <span>Send Another Message</span>
+                            <i data-lucide="rotate-ccw"></i>
+                        </button>
+                    </div>
+
+                    <form id="contact-form">
+                        <div class="form-row-two">
+                            <div class="form-group text-left">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="Dhammika Perera" required>
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" name="email" placeholder="dhammika@company.lk"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-left">
+                            <label for="form-project">Subject / Topic</label>
+                            <select id="form-project" name="subject" required>
+                                <option value="" disabled selected>Select option</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="oscm">OSCM &amp; Strategy Inquiry</option>
+                                <option value="software">Software &amp; Web Development</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group text-left">
+                            <label for="form-message">Your Message</label>
+                            <textarea id="form-message" name="message" rows="5"
+                                placeholder="Tell me about your inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-solid-blue btn-submit">
+                            Send Message
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <a href="#home" class="logo">
+                <div class="logo-icon"><img src="images/profile.png" alt="Yasith Mavinda Profile"></div>
+                <div class="logo-text-group">
+                    <span class="logo-title">YASITH MAVINDA</span>
+                    <span class="logo-subtitle">MIT UNDERGRADUATE</span>
+                </div>
+            </a>
+
+            <!-- Quick Links Center -->
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Copyright Right -->
+            <p class="copyright-text">© 2026 Yasith Mavinda. All rights reserved.</p>
+
+            <!-- Scroll to Top Button -->
+            <a href="#home" class="scroll-top-btn" aria-label="Scroll to top">
+                <i data-lucide="arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal (Popup Dialog) -->
+    <div id="project-modal" class="project-modal hidden">
+        <div class="project-modal-backdrop" id="project-modal-backdrop"></div>
+        <div class="project-modal-container glass-card">
+            <button id="close-project-modal" class="close-modal-btn" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div id="project-modal-body">
+                <!-- Dynamically injected -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Request CV Modal Popup -->
+        <div id="request-cv-modal" class="cv-modal hidden" aria-hidden="true" role="dialog" aria-labelledby="cv-modal-title">
+            <div class="cv-modal-backdrop" id="cv-modal-backdrop"></div>
+            <div class="cv-modal-container">
+                <button type="button" class="cv-close-modal-btn" id="close-cv-modal-btn" aria-label="Close modal">
+                    <i data-lucide="x"></i>
+                </button>
+                
+                <div class="cv-modal-header">
+                    <div class="cv-modal-icon-badge">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3 id="cv-modal-title" class="cv-modal-title">Request CV</h3>
+                    <p class="cv-modal-subtitle">
+                        To protect personal information, my full CV is available upon request. Fill out your details below to send an email request.
+                    </p>
+                </div>
+
+                <form id="request-cv-form" class="cv-modal-form">
+                    <div class="cv-form-group">
+                        <label for="cv-req-name"><i data-lucide="user"></i> Full Name</label>
+                        <input type="text" id="cv-req-name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="cv-form-group">
+                        <label for="cv-req-email"><i data-lucide="mail"></i> Email Address</label>
+                        <input type="email" id="cv-req-email" required placeholder="name@example.com">
+                    </div>
+                    <div class="cv-form-group">
+                        <label for="cv-req-message"><i data-lucide="message-square"></i> Purpose / Note (Optional)</label>
+                        <textarea id="cv-req-message" rows="3" placeholder="Briefly state the opportunity or reason for requesting..."></textarea>
+                    </div>
+                    <div class="cv-modal-privacy-note">
+                        <i data-lucide="shield-check"></i>
+                        <span>Your request will be sent directly to <strong>yasithmavinda@gmail.com</strong> safely &amp; securely.</span>
+                    </div>
+                    <div class="cv-modal-actions">
+                        <button type="button" class="btn btn-outline-gray" id="cancel-cv-modal-btn">Cancel</button>
+                        <button type="submit" class="btn btn-solid-blue">
+                            <span>Submit Request</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="request-cv-success-msg" class="cv-modal-success hidden">
+                    <div class="cv-success-icon-badge">
+                        <i data-lucide="check-circle-2"></i>
+                    </div>
+                    <h4 class="cv-success-title">Request Sent Successfully!</h4>
+                    <p class="cv-success-desc">
+                        Thank you! Your CV request details have been sent to <strong>yasithmavinda@gmail.com</strong>. Yasith will review your request and get back to you shortly.
+                    </p>
+                    <button type="button" class="btn btn-solid-blue" onclick="closeRequestCvModal()">Done</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Screenshots Gallery Modal -->
+        <div id="lightbox-modal" class="lightbox-modal hidden" aria-hidden="true">
+            <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+            <div class="lightbox-container">
+                <button id="close-lightbox-modal" class="close-modal-btn lightbox-close-btn"
+                    aria-label="Close Lightbox">
+                    <i data-lucide="x"></i>
+                </button>
+                <div class="lightbox-header">
+                    <h4 id="lightbox-title" class="lightbox-title">Taskora Screenshots</h4>
+                    <span id="lightbox-counter" class="lightbox-counter">1 / 5</span>
+                </div>
+                <div class="lightbox-stage">
+                    <button type="button" id="lightbox-prev" class="lightbox-nav-btn prev" aria-label="Previous image">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="lightbox-img-wrapper">
+                        <img id="lightbox-main-img" src="" alt="Taskora Screenshot" class="lightbox-img">
+                    </div>
+                    <button type="button" id="lightbox-next" class="lightbox-nav-btn next" aria-label="Next image">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+                <div id="lightbox-thumbs" class="lightbox-thumbs-strip"></div>
+            </div>
+        </div>
+
+        <!-- JavaScript File -->
+        <script src="script.js?v=9"></script>
+</body>
+
+</html>
